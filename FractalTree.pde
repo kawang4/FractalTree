@@ -16,13 +16,13 @@ public void draw()
   line(320,480,320,380);  
   drawBranches(320, 380, 100, 3*Math.PI/2);
   if (keyPressed) {
-    if (key == 'a') {
+    if (key == 's') {
       branchAngle -= 0.05;
     }
-    else if (key == 'b' && smallestBranch > 10) {
+    else if (key == 'w' && smallestBranch > 10) {
       smallestBranch -= 5;
     }
-    else if (key == 'c') {
+    else if (key == 'a') {
       colorA += (int)(Math.random()*10) - 10;
   colorB += (int)(Math.random()*10) - 10;
   colorC += (int)(Math.random()*10) - 10;
